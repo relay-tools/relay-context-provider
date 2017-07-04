@@ -25,6 +25,7 @@ async function (res, req, next) {
 
     return html;
 });
+```
 
-### Example
+### Isomorphic Example
 See the full isomorphic/universal/server side rendered example here: https://github.com/robrichard/relay-modern-isomorphic-example
