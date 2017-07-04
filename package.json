@@ -1,6 +1,6 @@
 {
   "name": "relay-context-provider",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Adds relay environment to react context to allow rendering child fragment containers",
   "main": "./dist/index.js",
   "repository": "https://github.com/robrichard/relay-query-lookup-renderer",
