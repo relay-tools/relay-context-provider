@@ -27,5 +27,43 @@ async function (res, req, next) {
 });
 ```
 
+```js
+
+import React from 'react';
+import {QueryRenderer} from 'react-relay';
+import {withRelay} from 'relay-context-provider';
+
+const MyComponent = ({relay}) => {
+  return <QueryRenderer
+    environment={relay.environment}
+    query={graphql`
+      query MyComponentQuery {
+        viewer {
+          fullName
+        }
+      }
+    `}
+    variables={{}}
+    render={({error, props}) => {
+      if (error) {
+        return <div>Error</div>;
+      }
+      if (!props) {
+        return <div>Loading</div>;
+      }
+      return <div>Got viewer: {props.viewer.fullName}</div>;
+    }}
+  />;
+};
+
+export default withRelay(MyComponent);
+```
+
 ### Isomorphic Example
 See the full isomorphic/universal/server side rendered example here: https://github.com/robrichard/relay-modern-isomorphic-example
+
+## Running Tests
+
+```bash
+yarn test
+```
