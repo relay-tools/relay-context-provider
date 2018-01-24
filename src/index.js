@@ -1,5 +1,8 @@
 import {Component} from 'react';
 import PropTypes from 'prop-types';
+import withRelay from './withRelay';
+
+export {withRelay};
 
 /**
  * Creates Relay Context for child components

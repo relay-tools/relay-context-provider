@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import RelayContextProvider from "..";
-import withRelay from "../withRelay";
+import {withRelay} from "..";
 
 describe("withRelay", () => {
   const node = document.createElement("div");
