@@ -1,3 +1,6 @@
+## Deprecation Notice
+This package is deprecated and no longer works as of Relay >=2.0.0. Please instead use `ReactRelayContext` from 'react-relay`.
+
 # relay-context-provider
 Adds relay environment and variables to React Context. Use then when you are fetching queries manually and need to render `fragmentContainers`. This is useful for server side rendering. 
 
